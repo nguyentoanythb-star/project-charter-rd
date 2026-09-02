@@ -935,35 +935,6 @@ export const CharterForm: React.FC<CharterFormProps> = ({
       {/* ==================== PHẦN 8: THẨM QUYỀN PM & HỘI ĐỒNG KÝ DUYỆT ==================== */}
       <SectionSignOff charter={charter} onChange={onChange} onOpenRoster={onOpenRoster} />
 
-      {/* Floating Bottom Action Bar (Geometric Balance Style) */}
-      <div className="p-4 bg-slate-900 text-white rounded-lg shadow-xs border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-          <div>
-            <p className="text-xs font-bold text-slate-200">Trạng thái: Sẵn sàng kết xuất dữ liệu & lưu trữ</p>
-            <p className="text-[10px] text-slate-400">Bảo toàn công thức toán học và bảng màu chuẩn khi xuất Excel</p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 w-full sm:w-auto">
-          <button
-            onClick={onSave}
-            className="flex-1 sm:flex-initial px-4 py-2 rounded bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold border border-slate-700 transition flex items-center justify-center gap-2 cursor-pointer shadow-xs"
-          >
-            <FileCheck className="w-4 h-4 text-emerald-400" />
-            <span>Lưu Lịch Sử</span>
-          </button>
-
-          <button
-            onClick={onExportExcel}
-            className="flex-1 sm:flex-initial px-4 py-2 rounded bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-xs transition flex items-center justify-center gap-2 cursor-pointer"
-          >
-            <Calculator className="w-4 h-4" />
-            <span>Xuất File Excel (.xlsx)</span>
-          </button>
-        </div>
-      </div>
-
     </div>
   );
 };

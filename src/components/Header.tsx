@@ -5,7 +5,6 @@ import {
   Clock, 
   Eye, 
   PenTool, 
-  Printer, 
   Sparkles,
   Layers,
   Menu,
@@ -24,7 +23,7 @@ interface HeaderProps {
   historyCount: number;
   viewMode: 'form' | 'preview' | 'dashboard';
   setViewMode: (mode: 'form' | 'preview' | 'dashboard') => void;
-  onPrint: () => void;
+  onPrint?: () => void;
   isExporting: boolean;
   onToggleSidebar?: () => void;
   hasApiKey?: boolean;
@@ -42,7 +41,6 @@ export const Header: React.FC<HeaderProps> = ({
   historyCount,
   viewMode,
   setViewMode,
-  onPrint,
   isExporting,
   onToggleSidebar,
   hasApiKey = false,
@@ -191,16 +189,6 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <Users className="w-3.5 h-3.5 text-blue-700" />
           <span className="hidden sm:inline">Danh Bạ</span>
-        </button>
-
-        {/* Print / PDF Button - Always Visible & Prominent */}
-        <button
-          onClick={onPrint}
-          title="In hoặc xuất PDF bản điều lệ chuẩn A4"
-          className="flex items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white rounded text-xs font-bold shadow-xs transition-colors active:scale-98 cursor-pointer"
-        >
-          <Printer className="w-3.5 h-3.5 text-white" />
-          <span>In PDF</span>
         </button>
 
         {/* Export Excel Button */}

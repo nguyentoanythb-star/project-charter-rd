@@ -110,16 +110,6 @@ export const CharterPreview: React.FC<CharterPreviewProps> = ({
               <span>Xuất Excel (.xlsx)</span>
             </button>
           )}
-
-          {onPrint && (
-            <button
-              onClick={onPrint}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded text-xs font-bold transition shadow-sm cursor-pointer active:scale-98"
-            >
-              <Printer className="w-3.5 h-3.5 text-white" />
-              <span>In PDF (A4)</span>
-            </button>
-          )}
         </div>
       </div>
 
