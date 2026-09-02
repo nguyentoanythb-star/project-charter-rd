@@ -1,0 +1,6 @@
+{
+  "name": "R&D Appliance Project Charter Studio",
+  "description": "Hệ thống tạo và quản lý Điều lệ Dự án (Project Charter) chuẩn ngành R&D Thiết bị Gia dụng, hỗ trợ lưu trữ lịch sử và xuất Excel giữ nguyên công thức, định dạng chuyên nghiệp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
